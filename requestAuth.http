@@ -1,0 +1,21 @@
+
+### login
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+    "email": "alvindiedevelop@gmail.com",
+    "password": "securepassword"
+}
+
+### Registro
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+    "name": "Alvaro Martin",
+    "email": "alvind2sieaa@gmail.com",
+    "password": "securepassword",
+    "document": "PE-13-2aa17666",
+    "phone": "+50768249353866"
+}
