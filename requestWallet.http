@@ -1,44 +1,38 @@
 
 ### add to wallet
-POST http://localhost:5000/api/wallet/addToWallet
+POST http://localhost:5001/api/wallet/addToWallet
 Content-Type: application/json
 
 {
     "name": "Alvaro Martin",
-    "email": "alvind2sieaa@gmail.com",
-    "document": "PE-13-2aa17666",
-    "phone": "+50768249353866",
+    "email": "alvind2s123ieaa@gmail.com",
+    "document": "PE-13-2aa17612366",
+    "phone": "+50768249312353866",
     "amount": 30
 }
 
 ### find wallet by user id
-GET http://localhost:5000/api/wallet/findWalletByUserId?userId=67b57e886eddf3ae5268bbb4
+GET http://localhost:5001/api/wallet/findWalletByUserId?userId=67b5b4c0f020b93dd64c7e74
 Content-Type: application/json
 
 ### pay amount
-POST http://localhost:5000/api/wallet/pay
+POST http://localhost:5001/api/wallet/pay
 Content-Type: application/json
 
 {
-    "userId": "67b57e886eddf3ae5268bbb4",
+    "userId": "67b5b4c0f020b93dd64c7e74",
     "amount": 30
 }
 
 ### confirm payment
-POST http://localhost:5000/api/wallet/confirmPayment
+POST http://localhost:5001/api/wallet/confirmPayment
 Content-Type: application/json
 
 {
-    "sessionId": "77cb710276fde66d5df85bcc6ed678cd",
-    "userId": "67b57e886eddf3ae5268bbb4",
-    "token": "838213",
+    "sessionId": "4d3703dd90e2da8217ec9a525dbcb82b",
+    "userId": "67b5b4c0f020b93dd64c7e74",
+    "token": "291352",
     "amount": 30
 }
 
 
-
-####
-{
-  "sessionId": "77cb710276fde66d5df85bcc6ed678cd",
-  "token": "838213"
-}

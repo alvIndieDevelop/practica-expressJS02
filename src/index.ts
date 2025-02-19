@@ -1,7 +1,7 @@
 import express, { Application } from "express";
 import { createServer } from "http";
 import "dotenv/config";
-import { options } from "config";
+import { options } from "./config";
 
 // middlewares
 import cors from "cors";

@@ -5,6 +5,11 @@ export const requestLogger = (
   res: Response,
   next: NextFunction
 ) => {
-  console.log(`[${req.method}] ${req.path} - ${JSON.stringify(req.body)}`);
+  // verify if inside of body have password if have password dont show it
+  const body = { ...req.body };
+  if (body.password) {
+    body.password = "*****";
+  }
+  console.log(`[${req.method}] ${req.path} - ${JSON.stringify(body)}`);
   next();
 };

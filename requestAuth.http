@@ -1,6 +1,6 @@
 
 ### login
-POST http://localhost:5000/api/auth/login
+POST http://localhost:5001/api/auth/login
 Content-Type: application/json
 
 {
@@ -9,13 +9,13 @@ Content-Type: application/json
 }
 
 ### Registro
-POST http://localhost:5000/api/auth/register
+POST http://localhost:5001/api/auth/register
 Content-Type: application/json
 
 {
     "name": "Alvaro Martin",
-    "email": "alvind2sieaa@gmail.com",
+    "email": "alvind2s123ieaa@gmail.com",
     "password": "securepassword",
-    "document": "PE-13-2aa17666",
-    "phone": "+50768249353866"
+    "document": "PE-13-2aa17612366",
+    "phone": "+50768249312353866"
 }
